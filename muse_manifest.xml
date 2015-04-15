@@ -1,0 +1,36 @@
+<manifest alg="2" build="1176" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1429140693718">
+  <folder name="css">
+    <file name="site_global.css" crc="422415861"/>
+    <file name="index.css" crc="4034234058" ref="index"/>
+    <file name="iefonts_index.css" crc="3931883784" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="221936890" ref="index"/>
+    <file name="museutils.js" crc="3793461109" ref="index"/>
+    <file name="webpro.js" crc="4263367560" ref="index"/>
+    <file name="musewpslideshow.js" crc="126372691" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="3946374898" ref="index"/>
+    <file name="touchswipe.js" crc="3796284560" ref="index"/>
+    <file name="jquery.musemenu.js" crc="492415246" ref="index"/>
+    <file name="jquery.watch.js" crc="3766403489" ref="index"/>
+    <file name="pie.js" crc="3827607177" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3843766759" ref="index"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="placeholder.jpg" crc="4051531941" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="dot-u665-fr.png" crc="61275030" ref="index"/>
+    <file name="placeholder-u139-fr.png" crc="3800525180" ref="index"/>
+    <file name="arr.png" crc="327386100" ref="index"/>
+    <file name="placeholder-u192-fr.jpg" crc="3810104152" ref="index"/>
+    <file name="icon1.png" crc="423662884" ref="index"/>
+    <file name="placeholder-u542-fr.png" crc="524328341" ref="index"/>
+    <file name="placeholder-u496-fr.png" crc="4276499681" ref="index"/>
+    <file name="twitter.png" crc="4102706121" ref="index"/>
+    <file name="facebook.png" crc="317936629" ref="index"/>
+    <file name="heart.png" crc="117585526" ref="index"/>
+  </folder>
+  <file name="index.html" crc="507085138" mt="1429140623638" redirect="true"/>
+</manifest>
