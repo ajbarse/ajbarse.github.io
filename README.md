@@ -1,75 +1,114 @@
-Dropplets
-=========
+<a href="https://github.com/TryGhost/Ghost"><img src="https://cloud.githubusercontent.com/assets/120485/6622822/c4c639fe-c8e7-11e4-9e64-5bec06c8b4c3.png" alt="Ghost" /></a>
+<a href="https://travis-ci.org/TryGhost/Ghost"><img align="right" src="https://travis-ci.org/TryGhost/Ghost.svg?branch=master" alt="Build status" /></a>
 
-Dropplets is a minimalist **Markdown** blogging platform focused on delivering just what you need in a blogging solution, but absolutely nothing you don't. When it comes to basic blogging, all you really want to do is write & publish which is where Dropplets excels. It's databaseless, so it installs on any server in just about 30 seconds. 
+![Ghost Screenshot](https://cloud.githubusercontent.com/assets/120485/6626466/6dae46b2-c8ff-11e4-8c7c-8dd63b215f7b.jpg)
 
-## What's Markdown?
-Markdown is a text formatting syntax inspired on plain text email. It is extremely simple, memorizable and visually lightweight on artifacts so as not to hinder reading.
+![Ghost is a simple, powerful publishing platform that allows you to share your stories with the world.](https://cloud.githubusercontent.com/assets/120485/6626501/b2bb072c-c8ff-11e4-8e1a-2e78e68fd5c3.png)
 
-> The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions.
+The project is maintained by a non-profit organisation called the **Ghost Foundation**, along with an amazing group of independent [contributors](https://github.com/TryGhost/Ghost/contributors). We're trying to make publishing software that changes the shape of online journalism.
 
-## Getting Started
-- [Installation](#installation)
-- [Writing Posts](#writing-posts)
-- [Publishing Posts](#publishing-posts)
-- [Editing Posts](#editing-posts)
-- [Changing Settings](#changing-settings)
-- [Changing Templates](#changing-templates)
-- [Updating Dropplets](#updating-dropplets)
-- [License](#license)
+- [Ghost.org](https://ghost.org)
+- [Latest Release](https://ghost.org/download/)
+- [Support](http://support.ghost.org/)
+- [Theme Docs](http://themes.ghost.org)
+- [Contributing Guide](https://github.com/TryGhost/Ghost/blob/master/CONTRIBUTING.md)
+- [Feature Requests](http://ideas.ghost.org/)
+- [Dev Blog](http://dev.ghost.org)
 
-## Installation
-Dropplets is compatible with most server configurations and can be typically installed in under a minute using the few step-by-step instructions below:
 
-1. Download the latest **release** and then extract the downloaded zip file.
-3. Upload the entire contents of the extracted zip file to your web server wherever you want Dropplets to be installed. 
-4. Pull up your site in any modern web browser (e.g. if you uploaded Dropplets to **yoursite.com**, load **yoursite.com** in your browser to finish the installation), then create and confirm your password.
+# Quick Start Install
 
-## Writing Posts
-With Dropplets, you write your posts offline (using the text or Markdown editor of your choice) in Markdown format. Here's a handy [syntax guide](https://github.com/circa75/dropplets/wiki/Markdown-Syntax-Guide) if you need a little help with your Markdown skills. All posts for Dropplets **MUST** be composed using the following format:
+Make sure you've installed Node.js - We recommend the latest **Node v0.10.x** release.
 
-    # Your Post Title
-    - Post Author Name (e.g. "Dropplets")
-    - Post Author Twitter Handle (e.g. "dropplets")
-    - Publish Date in YYYY/MM/DD Format (e.g. "2013/04/28")
-    - Post Category (e.g. "Random Thoughts")
-    - Post Status (e.g. "published" or "draft")
+Ghost is also compatible with **Node v0.12** and **io.js v1.2**, but please note that these versions are more likely to run into installation problems. May contain nuts. Please use the [forum](https://ghost.org/forum/installation/) for help.
 
-    Your post text starts here. 
-    
-All posts must also be saved with the **.md** file extension. For instance, if your post title is **My First Blog Post**, your post file should look like this:
+1. Download the [latest release](https://ghost.org/download/) of Ghost
+1. Unzip in the location you want to install
+1. Fire up a terminal
+1. `npm install --production`
+1. Start Ghost!
+    - Local environment: `npm start`
+    - On a server: `npm start --production`
+1. `http://localhost:2368/ghost` :tada:
 
-    my-first-blog-post.md
+More [install docs](http://support.ghost.org/installation/) here in case you got stuck.
 
-Some templates include the ability to add a post image or thumbnail along with your post in which should match your post file name like this:
+<a name="getting-started"></a>
+# Developer Install (from git)
 
-    my-first-blog-post.jpg
+Install Node.js. 
 
-Post file names are used to structure post permalinks on your blog. So, a post file saved as **my-first-blog-post.md** will result in **yoursite.com/my-first-blog-post** as the post permalink.
+```bash
+# Node v0.10.x - full support
+# Node v0.12.x and io.js v1.2 - partial support
+#
+# Choose wisely
+```
 
-## Publishing Posts
-After you've finished writing your post offline, you can then publish your post using the Dropplets toolbar:
+Clone :ghost:
 
-1. Login to your Dropplets installation using the password you created during the installation and setup process.
-2. Click the Dropplet in your toolbar to select, upload and publish your post.
+```bash
+git clone git://github.com/tryghost/ghost.git
+cd ghost
+```
 
-## Editing Posts
-Re-upload your edited post file using the steps above. Doing this will automatically overwrite the existing post and publish your new edits. To delete a post, change the **Post Status** at the top of your post file to **draft**.
+Install grunt. No prizes here.
 
-## Changing Settings
-To change your blog settings, click the gear icon in the Dropplets toolbar. This will load the settings panel where you will be able to change all of your blog settings including your password.
+```bash
+npm install -g grunt-cli
+```
 
-## Changing Templates
-To change your blog template, click the star icon in the Dropplets toolbar. This will load the templates panel where you will be able to browse and change your blog template as well as purchase new premium templates.
+Install Ghost. If you're running locally, use [master](https://github.com/TryGhost/Ghost/tree/master). For production, use [stable](https://github.com/TryGhost/Ghost/tree/stable). :no_entry_sign::rocket::microscope:
 
-## Updating Dropplets
-Eventually, we will be implementing auto-updates for the Dropplets platform, but until then, just replace everything but your **posts** directory and **config.php** when we release a new version of Dropplets.
+```bash
+npm install
+```
 
-## License
-Copyright (c) 2013 Circa75 Media, LLC
+Build the things!
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+```bash
+grunt init
+```
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+Minify that shit for production?
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```bash
+grunt prod
+```
+
+Start your engines.
+
+```bash
+npm start
+
+## running production? Add --production
+```
+
+Congrats! You made it. BTW you can also just `npm install ghost` if you're into that sort of thing. NPM afficionados can also read up on using [Ghost as an NPM module](https://github.com/TryGhost/Ghost/wiki/Using-Ghost-as-an-npm-module).
+
+More general [install docs](http://support.ghost.org/installation/) here in case you got stuck.
+
+
+# Deploying Ghost
+
+The easiest way to deploy Ghost is on our official <strong><a href="https://ghost.org/pricing/">Ghost(Pro)</a></strong> hosted platform. This service funds the Ghost Foundation, which makes actively maintaining this project possible.
+
+Also, you get to save yourself a lot of wasted time and headaches by deploying a new instance of Ghost to a managed server with a global content delivery network in just a few clicks.
+
+[Other options](http://support.ghost.org/deploying-ghost/) are available if you prefer playing around with servers by yourself.
+
+
+# Staying Up to Date
+
+When a new version of Ghost comes out, you'll want to look over these [upgrade instructions](http://support.ghost.org/how-to-upgrade/) for what to do next.
+
+You can talk to other Ghost users on [our forums](https://ghost.org/forum) or chat with Ghost developers on IRC. We're on `irc.freenode.net`, in the `#Ghost` channel. We have a public meeting every Tuesday at 5:30pm London time.
+
+New releases are announced on the [dev blog](http://dev.ghost.org/tag/releases/). You can subscribe by email or follow [@TryGhost_Dev](https://twitter.com/tryghost_dev) on Twitter, if you prefer your updates bite-sized and facetious.
+
+:saxophone::turtle:
+
+
+# Copyright & License
+
+Copyright (c) 2013-2015 Ghost Foundation - Released under the [MIT license](LICENSE).
