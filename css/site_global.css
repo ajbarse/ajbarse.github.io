@@ -131,6 +131,65 @@ a.nontext /* used to override default properties of 'a' tag */
 	padding: 0px;
 }
 
+.Position
+{
+	color: #7F7F7F;
+	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-size: 11px;
+	text-align: center;
+	padding: 0px;
+}
+
+.Name
+{
+	color: #000000;
+	font-family: nova-mono, sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	padding: 0px;
+}
+
+.review
+{
+	color: #000000;
+	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-size: 15px;
+	font-style: italic;
+	line-height: 26px;
+	text-align: center;
+	padding: 0px;
+}
+
+.text-center
+{
+	color: #000000;
+	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 22px;
+	text-align: center;
+	padding: 0px;
+}
+
+.h2
+{
+	color: #000000;
+	font-family: nova-mono, sans-serif;
+	font-size: 48px;
+	font-weight: 400;
+	text-align: center;
+	padding: 0px;
+}
+
+.heading-center
+{
+	font-family: nova-mono, sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	padding: 0px;
+}
+
 .list0 li:before
 {
 	position: absolute;
